@@ -30,3 +30,17 @@
 // checkWord('Black','Kcla');
 
 // console.log(-'3')
+
+const arr = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4];
+const counts = {};
+arr.map((val)=>{
+   console.log(counts[val])
+})
+
+ for (const num of arr) {
+    console.log(num)
+   counts[num] = counts[num] ? counts[num] + 1 : 1;
+ }
+
+// // console.log(counts);
+// console.log(counts[5], counts[2], counts[9], counts[4]);
